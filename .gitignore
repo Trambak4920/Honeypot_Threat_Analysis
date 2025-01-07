@@ -1,0 +1,7 @@
+#Venv of backend
+Interface/Backend/parser-venv/
+#Python bytecodes
+*.pyc
+*.pyo
+__pycache__/
+

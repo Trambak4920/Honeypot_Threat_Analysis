@@ -7,10 +7,19 @@ The Interface consists of a parser that parses the log files of the honeypot int
 (under development)
 ## Backend 
 ### Usage(Based on current dev stage)
-- After the Honeypot has appended logs into the respective folder, `log-parser.py` is to be used.
+After the Honeypot has appended logs into the respective folder the folowing are the usage instructons:
+- Mongodb server is to be setup (if logs are to be stored in server)
+- Virtual env for log-parser is to be setup wih respective dependencies installed
 ```
-python3 log-parser.py <path to log file> <path to output json file>
+pip install -r requirements.txt
 ```
-The above process can be automated via shell scripts or higher python scripts.
-- This collection of file is to be loaded into the NoSQL server
-(under development)
+- `log-parser.py` is to be used with appropriate arguments.
+```
+python3 log-parser.py -h
+
+python3 log-parser.py <path to log file> --jfile <path to output json file> --mongo_server_url <url of the mongodb server to store the logs>  --mongo_db <database name>  --mongo_col <collection name>
+```
+This stores the logs into the specified mongodb server or json file which can later be fetched by frontend.
+
+The above process can be automated for multiple logs via shell scripts or higher python scripts.
+
