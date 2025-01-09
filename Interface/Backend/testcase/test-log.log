@@ -1,0 +1,217 @@
+
+2025-01-05T23:04:22.456415 - From 127.0.0.1:59368: 
+GET / HTTP/1.0
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.347845 - From 127.0.0.1:52084: 
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.349777 - From 127.0.0.1:52106: 
+GET /.git/HEAD HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /.git/HEAD was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.350297 - From 127.0.0.1:52156: 
+GET /robots.txt HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /robots.txt was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.351214 - From 127.0.0.1:52144: 
+GET / HTTP/1.0
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.351483 - From 127.0.0.1:52154: 
+GET /nmaplowercheck1736098544 HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /nmaplowercheck1736098544 was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.360898 - From 127.0.0.1:52134: 
+POST / HTTP/1.1
+Content-Length: 88
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+
+
+
+Sent: 
+b'OK\r\n'
+
+2025-01-05T23:05:44.361672 - From 127.0.0.1:52086: 
+POST /sdk HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Content-Length: 441
+Host: localhost
+Connection: close
+
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /sdk was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.363955 - From 127.0.0.1:52188: 
+GET /HNAP1 HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /HNAP1 was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.366842 - From 127.0.0.1:52204: 
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.368769 - From 127.0.0.1:52218: 
+GET /nmaplowercheck1736098544 HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /nmaplowercheck1736098544 was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.372421 - From 127.0.0.1:52242: 
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.373001 - From 127.0.0.1:52254: 
+GET /favicon.ico HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /favicon.ico was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.374606 - From 127.0.0.1:52256: 
+GET /evox/about HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL /evox/about was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.376380 - From 127.0.0.1:52258: 
+GET / HTTP/1.1
+Authorization: NTLM TlRMTVNTUAABAAAAB4IIoAAAAAAAAAAAAAAAAAAAAAA=
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.384803 - From 127.0.0.1:52302: 
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.391397 - From 127.0.0.1:52314: 
+POST / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Content-Length: 0
+Host: localhost
+Connection: close
+
+
+
+Sent: 
+b'OK\r\n'
+
+2025-01-05T23:05:44.395162 - From 127.0.0.1:52334: 
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.404304 - From 127.0.0.1:52358: 
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.412915 - From 127.0.0.1:52370: 
+GET / HTTP/1.1
+User-Agent: Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)
+Host: localhost
+Connection: close
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.424159 - From 127.0.0.1:52382: 
+GET / HTTP/1.0
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
+
+2025-01-05T23:05:44.532185 - From 127.0.0.1:52390: 
+GET / HTTP/1.1
+Host: localhost
+
+
+Sent: 
+b'<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p>The requested URL / was not found on this server.<br />\n</p>\n\n<hr>\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\n</body></html>\n\n'
