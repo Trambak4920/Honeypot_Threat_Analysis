@@ -7,7 +7,9 @@ from pymongo import MongoClient
 #Database integration constants
 MONGO_URL="mongodb://127.0.0.1:27017/"
 
-
+#SERVER constants
+HOST = "127.0.0.1"
+PORT = "7500"
 
 
 
@@ -41,6 +43,6 @@ def getKV(db,col,key,value):
 
 
 if __name__ == "__main__":
-	server_obj.run(debug=True,port="7500")
+	server_obj.run(debug=False,port=PORT, host= HOST)
 
 
