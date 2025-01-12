@@ -3,7 +3,7 @@ import pymongo
 from pymongo import MongoClient
 
 
-
+#Constants are to be configred via ENv vars in later development stages
 #Database integration constants
 MONGO_URL="mongodb://127.0.0.1:27017/"
 
