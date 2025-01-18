@@ -22,7 +22,8 @@ python3 log-parser.py <path to log file> --jfile <path to output json file> --mo
 ```
 This stores the logs into the specified mongodb server or json file which can later be fetched by frontend.
 ##### Data fields in database
-```{
+```
+{
     _id: ObjectId(),
     timestamp,
     host_ip,
@@ -37,4 +38,22 @@ __\_id__ will be excluded while json will be processed by api as it is a bson da
 The above process can be automated for multiple logs via shell scripts or higher python scripts.
 #### API Calls
 With the database populated now the `api-server/api-server.py` can be run with web servers like Apache with gunicorn for avoiding security risks if exposed to a larger network
-(Under DEV)
+#### API SERVER USAGE
+For the api server to fetch data, the mongo server must be running on local or remote machine and its url is to be configured in __server-startup.sh__
+First the virtual env is to be configured with the dependencies if not already done above.
+```
+python3 -m venv VENV
+source VENV/bin/activate
+pip3 -r requirements.txt
+deactivate
+```
+Once the above process is done. The __server-startup.sh__ is to be configured for the shell env variables of the server.
+Then finally it is to be given necessary perms and run.
+```
+chmod +x server-startup.sh
+./server-startup.sh
+```
+This will configure and run the server.
+
+(The API currently only supports read reqests, still under development)
+
