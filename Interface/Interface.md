@@ -43,14 +43,18 @@ For the api server to fetch data, the mongo server must be running on local or r
 First the virtual env is to be configured with the dependencies if not already done above.
 ```
 python3 -m venv VENV
+
 source VENV/bin/activate
+
 pip3 -r requirements.txt
+
 deactivate
 ```
 Once the above process is done. The __server-startup.sh__ is to be configured for the shell env variables of the server.
 Then finally it is to be given necessary perms and run.
 ```
 chmod +x server-startup.sh
+
 ./server-startup.sh
 ```
 This will configure and run the server.
