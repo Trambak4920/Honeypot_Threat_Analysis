@@ -1,11 +1,11 @@
 from flask import Flask,jsonify,render_template
 import pymongo
 from pymongo import MongoClient
-
+import os
 
 #Constants are to be configred via ENv vars in later development stages
 #Database integration constants
-MONGO_URL="mongodb://127.0.0.1:27017/"
+MONGO_URL=str(os.getenv("MONGO_SERVER_URL"))
 
 #SERVER constants
 HOST = "127.0.0.1"
