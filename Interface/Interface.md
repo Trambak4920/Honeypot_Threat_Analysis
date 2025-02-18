@@ -24,7 +24,6 @@ This stores the logs into the specified mongodb server or json file which can la
 ##### Data fields in database
 ```
 {
-    _id: ObjectId(),
     timestamp,
     host_ip,
     host_port
@@ -50,6 +49,16 @@ pip3 -r requirements.txt
 
 deactivate
 ```
+Next, a database containing the user credentials must be setup for pass key authorisation 
+Structure:
+```
+db : cred
+col : userCred
+conetnts of the collection : [{"username":<u1>,"password":<pass>},{...},...]
+```
+The database can be either manually setup by admin by interacting with mongodb 
+or __database-setup.py__ is to be run once and then necessary changes are to be made ivia mongosh or other interactive methods.
+
 Once the above process is done. The __server-startup.sh__ is to be configured for the shell env variables of the server.
 Then finally it is to be given necessary perms and run.
 ```
@@ -59,5 +68,11 @@ chmod +x server-startup.sh
 ```
 This will configure and run the server.
 
+##### API Endpoint
+The template provides info about the endpoints
+here's an example : 
+```
+http://127.0.0.1:8080/api/read/all?db=Honeylog&col=test_log&passkey=password
+```
 (The API currently only supports read reqests, still under development)
 

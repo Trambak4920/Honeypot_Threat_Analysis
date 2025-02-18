@@ -3,11 +3,16 @@ import pymongo
 from pymongo import MongoClient
 import os
 from flask_cors import CORS
+import bcrypt
 
 #Constants are to be configred via ENv vars in later development stages
 #Database integration constants
 #MONGO_URL=str(os.getenv("MONGO_SERVER_URL"))# production
 MONGO_URL="mongodb://localhost:27017"#testing
+
+# 0-> database for storing credentials 1-> Collection containing credentials
+#CRED_PATH=["cred","userCred"]#testing
+CRED_PATH=[str(os.getenv("CRED_DB")),str(os.getenv("CRED_DB_USERCOL"))]# production
 #SERVER constants
 HOST = "127.0.0.1"
 PORT = "7500"
@@ -28,15 +33,34 @@ def getDBCOL():
 	
 	db=request.args.get("db")
 	col=request.args.get("col")
-	
+	passkey=request.args.get("passkey")
 	response={
 	"status":None,
 	"data":None
 	}
 	
+	
+	
 	mongo_client = MongoClient(MONGO_URL)
+	
+	cred_db_obj=mongo_client[CRED_PATH[0]]
+	user_cred_col_obj=cred_db_obj[CRED_PATH[1]]
+	user_list = list(user_cred_col_obj.find({},{"_id":0}))
+	validity = False
+	if (user_list):
+		for i in user_list:
+			if(bcrypt.checkpw(passkey.encode("utf-8"),i["password"])):
+				validity = True
+				break
+	
+	if(not validity):
+		response["status"]=401
+		return jsonify(response)
+				
 	mongo_db_obj = mongo_client[db]
 	mongo_col_obj = mongo_db_obj[col]
+	
+	
 	
 	response["data"] = list(mongo_col_obj.find({},{"_id":0}))
 	
@@ -58,6 +82,21 @@ def getKV():
 	"data":None
 	}
 	mongo_client = MongoClient(MONGO_URL)
+	
+	cred_db_obj=mongo_client[CRED_PATH[0]]
+	user_cred_col_obj=cred_db_obj[CRED_PATH[1]]
+	user_list = list(user_cred_col_obj.find({},{"_id":0}))
+	validity = False
+	if (user_list):
+		for i in user_list:
+			if(bcrypt.checkpw(passkey.encode("utf-8"),i["password"])):
+				validity = True
+				break
+	
+	if(not validity):
+		response["status"]=401
+		return jsonify(response)
+	
 	mongo_db_obj = mongo_client[db]
 	mongo_col_obj = mongo_db_obj[col]
 	
@@ -72,6 +111,7 @@ def getKV():
 
 
 if __name__ == "__main__":
+	print(CRED_PATH)
 	server_obj.run(debug=False,port=PORT, host= HOST)
 
 
