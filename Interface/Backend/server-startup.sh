@@ -10,7 +10,7 @@ export API_TIMEOUT=30 # in seconds
 export API_PORT=8080
 
 # Python Necessities
-export VENV_PATH="./I-venv/bin/activate" # Full path to the python virtual env with the required dependencies
+export VENV_PATH="source Honeypot_directory/bin/activate" # Full path to the python virtual env with the required dependencies
 export SERVER_PATH="api-server-src.api-server" # Path to the 'api-server.py' WITHOUT THE .py EXTENSION AND WITH . INSTEAD OF '/'
 
 echo -e "Current Configurations:\n\nDATABASE_SERVER_URL:$MONGO_SERVER_URL\n\nAPI_SUB_PROCESSESS:$API_SUB_PROCESSES\nAPI_THREADS:$API_THREADS\nAPI_TIMEOUT:$API_TIMEOUT\nAPI_PORT:$API_PORT\n\nVENV_PATH:$VENV_PATH\nSERVER_PATH:$SERVER_PATH"
