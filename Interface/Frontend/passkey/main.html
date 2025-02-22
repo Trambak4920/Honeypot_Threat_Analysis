@@ -1,4 +1,4 @@
-                                                                                                                                                                                        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -7,15 +7,14 @@
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <div id="all">
-  <div class="container">
+ 
+  <div class="input">
     <h2>WEB INTERFACE</h2>
 
     <div class="input-group">
       <label for="passkey">Passkey:</label>
       <input type="text" id="passkey" placeholder="Enter passkey">
       
-      <!-- Button group placed to the right of the input -->
       <div class="button-group">
         <button class="fetch-btn" id="fetchBtn">Fetch</button>
         <button class="reset-btn" id="resetBtn">Reset</button>
@@ -28,21 +27,10 @@
     <p class="error-message" id="errorMessage">Authentication Failure</p>
   </div>
   <div id="output">
-    <!-- <div id="Mychart1">
-      <canvas id="Canvas1"></canvas>
-    </div>
-    <div id="Mychart2">
-      <canvas id="Canvas2"></canvas>
-    </div>
-    <div id="Mychart3">
-      <canvas id="Canvas3"></canvas>
-    </div>
-    <div id="Mychart4">
-      <canvas id="Canvas4"></canvas>
-    </div> -->
+  
   </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
   <script src="main.js"></script>
 
 </body>

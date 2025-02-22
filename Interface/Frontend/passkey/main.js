@@ -1,570 +1,352 @@
-const fdata={"data":[
-  {                                                                                                                                                         
-     "timestamp": "2025-01-05T23:04:22.456415",                                                                                                             
-     "host_ip": "127.0.0.1",                                                                                                                                
-     "host_port": "59368",                                                                                                                                  
-     "host_name": null,                                                                                                                                     
-     "user_agent": null,                                                                                                                                    
-     "request": {                                                                                                                                           
-        "method": "GET",                                                                                                                                    
-        "path": "/"                                                                                                                                         
-     },                                                                                                                                                     
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"                                                                                                                                              
-  },                                                                                                                                                        
-  {                                                                                                                                                         
-     "timestamp": "2025-01-05T23:05:44.347845",                                                                                                             
-     "host_ip": "127.0.0.1",                                                                                                                                
-     "host_port": "52084",                                                                                                                                  
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.349777",
-     "host_ip": "127.0.0.1",
-     "host_port": "52106",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/.git/HEAD"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /.git/HEAD was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.350297",
-     "host_ip": "127.0.0.1",
-     "host_port": "52156",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/robots.txt"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /robots.txt was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.351214",
-     "host_ip": "127.0.0.1",
-     "host_port": "52144",
-     "host_name": null,
-     "user_agent": null,
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.351483",
-     "host_ip": "127.0.0.1",
-     "host_port": "52154",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/nmaplowercheck1736098544"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /nmaplowercheck1736098544 was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.360898",
-     "host_ip": "127.0.0.1",
-     "host_port": "52134",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "POST",
-        "path": "/"
-     },
-     "response": "OK\\r\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.361672",
-     "host_ip": "127.0.0.1",
-     "host_port": "52086",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "POST",
-        "path": "/sdk"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /sdk was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.363955",
-     "host_ip": "127.0.0.1",
-     "host_port": "52188",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/HNAP1"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /HNAP1 was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.366842",
-     "host_ip": "127.0.0.1",
-     "host_port": "52204",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.368769",
-     "host_ip": "127.0.0.1",
-     "host_port": "52218",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/nmaplowercheck1736098544"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /nmaplowercheck1736098544 was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.372421",
-     "host_ip": "127.0.0.1",
-     "host_port": "52242",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.373001",
-     "host_ip": "127.0.0.1",
-     "host_port": "52254",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/favicon.ico"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /favicon.ico was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.374606",
-     "host_ip": "127.0.0.1",
-     "host_port": "52256",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/evox/about"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL /evox/about was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.376380",
-     "host_ip": "127.0.0.1",
-     "host_port": "52258",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.384803",
-     "host_ip": "127.0.0.1",
-     "host_port": "52302",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.391397",
-     "host_ip": "127.0.0.1",
-     "host_port": "52314",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "POST",
-        "path": "/"
-     },
-     "response": "OK\\r\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.395162",
-     "host_ip": "127.0.0.1",
-     "host_port": "52334",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.404304",
-     "host_ip": "127.0.0.1",
-     "host_port": "52358",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.412915",
-     "host_ip": "127.0.0.1",
-     "host_port": "52370",
-     "host_name": "localhost",
-     "user_agent": "Mozilla/5.0 (compatible; Nmap Scripting Engine; https://nmap.org/book/nse.html)",
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.424159",
-     "host_ip": "127.0.0.1",
-     "host_port": "52382",
-     "host_name": null,
-     "user_agent": null,
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  },
-  {
-     "timestamp": "2025-01-05T23:05:44.532185",
-     "host_ip": "127.0.0.1",
-     "host_port": "52390",
-     "host_name": "localhost",
-     "user_agent": null,
-     "request": {
-        "method": "GET",
-        "path": "/"
-     },
-     "response": "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\\n<html><head>\\n<title>404 Not Found</title>\\n</head><body>\\n<h1>Not Found</h1>\\n<p>The requested URL / was not found on this server.<br />\\n</p>\\n\\n<hr>\\n<address>Apache/2.4.9 (Ubuntu) Server at example.com Port 80</address>\\n</body></html>\\n\\n"
-  }
-],"status":200}
 
-//--------------------------------------------------
-
-const div1 = document.createElement("div");
-div1.classList.add("Mychart");
-
-const canvas1 = document.createElement("canvas");
-canvas1.id = "mychart1";
-
-div1.appendChild(canvas1);
-
-document.body.appendChild(div1);
-
-//---------------------------------------------------
+//CONSTANTS FOR BACKEND, LATER TO BE CONTROLLED FROM ADMIN PANNEL
+const DATABASE="Honeylogs";
+const COLLECTION="httplog";
+const ENDPOINT = "http://127.0.0.1:8080/api/read/all";
+//IO
+const fetchButton= document.getElementById('fetchBtn');
+const resetButton = document.getElementById('resetBtn');
+const passKey = document.getElementById('passkey');
+//Fields
+const outputField = document.getElementById('output');
 
 
-const div2 = document.createElement("div");
-div2.classList.add("Mychart");
+// Fetches data
 
-const canvas2 = document.createElement("canvas");
-canvas2.id = "mychart2";
+async function getData(url){
+	try{
+		const serverResponse= await fetch(url);
+		if(!serverResponse.ok){
+			outputfield.innerText="Network error";
+			return;
+		}
+		const data= await serverResponse.json();
+		return data;
+		
+	}
+	catch(error){
+		outputfield.innerText="Fetch error";
+	
+	}
 
-div2.appendChild(canvas2);
 
-document.body.appendChild(div2);
-
-//----------------------------------------------------
-
-const div3 = document.createElement("div");
-div3.classList.add("Mychart");
-
-const canvas3 = document.createElement("canvas");
-canvas3.id = "mychart3";
-
-div3.appendChild(canvas3);
-
-document.body.appendChild(div3);
-
-//-----------------------------------------------------
-
-const div4 = document.createElement("div");
-div4.classList.add("Mychart");
-
-const canvas4 = document.createElement("canvas");
-canvas4.id = "mychart4";
-
-div4.appendChild(canvas4);
-
-document.body.appendChild(div4);
-
-//------------------------------------------------------
-
-function countOccurrences(arr) {
-  var countMap = new Map();
-  
-  for (var i = 0; i <arr.length; i++) {
-      let item= arr[i].request.method;
-      if (countMap.has(item)) {
-          countMap.set(item, countMap.get(item) + 1);
-      } else {
-          countMap.set(item, 1);
-      }
-  }
-  
-  return countMap;
 }
-const meth =Object.fromEntries(countOccurrences(fdata.data));
-const methkey= Object.keys(meth);
-const methval=Object.values(meth);
 
-//-------------------------------------------------------
 
+
+
+// Creates dom targets for charts
+function createDOMTargets(){
+	//DOM output target creation
+	const outputDiv = document.getElementById('output');
+	//METHOD PIE
+	const div1 = document.createElement("div");
+	div1.classList.add("Mychart");
+	const canvas1 = document.createElement("canvas");
+	canvas1.id = "method";
+	div1.appendChild(canvas1);
+	outputDiv.appendChild(div1);
+	//PATH PIE
+	const div2 = document.createElement("div");
+	div2.classList.add("Mychart");
+	const canvas2 = document.createElement("canvas");
+	canvas2.id = "path";
+	div2.appendChild(canvas2);
+	outputDiv.appendChild(div2);
+	//HOSTNAME PIE
+	const div3 = document.createElement("div");
+	div3.classList.add("Mychart");
+	const canvas3 = document.createElement("canvas");
+	canvas3.id = "hostname";
+	div3.appendChild(canvas3);
+	outputDiv.appendChild(div3);
+	//HOSTIP PIE
+	const div4 = document.createElement("div");
+	div4.classList.add("Mychart");
+	const canvas4 = document.createElement("canvas");
+	canvas4.id = "host_ip";
+	div4.appendChild(canvas4);
+	outputDiv.appendChild(div4);
+	//USERAGENT PIE
+	const div5 = document.createElement("div");
+	div5.classList.add("Mychart");
+	const canvas5 = document.createElement("canvas");
+	canvas5.id = "user_agent";
+	div5.appendChild(canvas5);
+	outputDiv.appendChild(div5);
+}
+
+//Parses the data for visualisation
+function processData(arr) {
+	  let methodMap = new Map();
+	  let pathMap = new Map();
+	  let hostNameMap = new Map();
+	  let hostIPMap = new Map();
+	  let userAgentMap = new Map();
+	  arr.forEach((item) => {
+	    if (hostIPMap.has(item.host_ip)) {
+	      hostIPMap.set(item.host_ip, hostIPMap.get(item.host_ip) + 1);
+	    } else {
+	      hostIPMap.set(item.host_ip, 1);
+	    }
+	    if (hostNameMap.has(item.host_name)) {
+	      hostNameMap.set(item.host_name, hostNameMap.get(item.host_name) + 1);
+	    } else {
+	      hostNameMap.set(item.host_name, 1);
+	    }
+	    if (methodMap.has(item.request.method)) {
+	      methodMap.set(item.request.method, methodMap.get(item.request.method) + 1);
+	    } else {
+	      methodMap.set(item.request.method, 1);
+	    }
+	    if (pathMap.has(item.request.path)) {
+	      pathMap.set(item.request.path, pathMap.get(item.request.path) + 1);
+	    } else {
+	      pathMap.set(item.request.path, 1);
+	    }
+	    if (userAgentMap.has(item.user_agent)) {
+	      userAgentMap.set(item.user_agent, userAgentMap.get(item.user_agent) + 1);
+	    } else {
+	      userAgentMap.set(item.user_agent, 1);
+	    }
+	  });
+	  let res = [
+	    Object.fromEntries(methodMap), 
+	    Object.fromEntries(pathMap), 
+	    Object.fromEntries(hostNameMap), 
+	    Object.fromEntries(hostIPMap),
+	    Object.fromEntries(userAgentMap)
+	  ];
+
+	  return res;
+}
+
+  
+// Generats Random RGB with A set to 0.75
 function randRGBA() {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  const a = 0.75; // Alpha between 0 and 1
-  return ` rgba(${r}, ${g}, ${b}, ${a}) `;
-}
-let bgcol1=[]
-for(let i=0;i<methkey.length;i++){
-   bgcol1.push(randRGBA());
+	  const r = Math.floor(Math.random() * 256);
+	  const g = Math.floor(Math.random() * 256);
+	  const b = Math.floor(Math.random() * 256);
+	  const a = 0.5; 
+	  return ` rgba(${r}, ${g}, ${b}, ${a}) `;
 }
 
-//--------------------------------------------------------
 
-const data0 = {
-  labels: methkey,
-  datasets: [{
-    label: 'Methods',
-    data: methval,
-    backgroundColor: bgcol1,
-    borderColor: [
-      
-    ],
-    borderWidth: 1
-  }]
-};
+  
+//CHART POPULATION
 
-// config 
-const config0 = {
-  type: 'pie',
-  data:data0,
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
+
+function populateChart(dataobj){
+
+
+	let processedData=processData(dataobj.data);
+	let colorsets=[];
+	for (let i = 0; i < processedData.length; i++) {
+	    let colorset = [];
+	    for (let j = 0; j < Object.keys(processedData[i]).length; j++) {
+		colorset.push(randRGBA()); // Ensure randRGBA() works as expected
+	    }
+	    colorsets.push(colorset);
+	}
+
+
+	const methodCanvasCtx = document.getElementById("method").getContext("2d");
+	const pathCanvasCtx = document.getElementById("path").getContext("2d");
+	const hostNameCanvasCtx = document.getElementById("hostname").getContext("2d");
+	const hostIPCanvasCtx = document.getElementById("host_ip").getContext("2d");
+	const userAgentCanvasCtx = document.getElementById("user_agent").getContext("2d");
+
+
+	var methodChart = new Chart(methodCanvasCtx, {
+	    type: 'pie',
+	    data: {
+		labels: Object.keys(processedData[0]),
+		datasets: [{
+		    label: 'Product A Sales',
+		    data: Object.values(processedData[0]),
+		    backgroundColor: colorsets[0],
+		    borderColor: colorsets[0],
+		    borderWidth: 0
+		}]
+	    },
+	    options: {
+		responsive: true,
+		plugins: {
+		    legend: {
+		        position: 'top',
+		    },
+		    tooltip: {
+		        callbacks: {
+		            label: function(tooltipItem) {
+		                return tooltipItem.label + ': ' + tooltipItem.raw;
+		            }
+		        }
+		    }
+		}
+		}
+	    
+	});
+
+
+	var pathChart = new Chart(pathCanvasCtx, {
+	    type: 'pie',
+	    data: {
+		labels: Object.keys(processedData[1]),
+		datasets: [{
+		    label: 'Product A Sales',
+		    data: Object.values(processedData[1]),
+		    backgroundColor: colorsets[1],
+		    borderColor: colorsets[1],
+		    borderWidth: 0
+		}]
+	    },
+	    options: {
+		responsive: true,
+		plugins: {
+		    legend: {
+		        position: 'top',
+		    },
+		    tooltip: {
+		        callbacks: {
+		            label: function(tooltipItem) {
+		                return tooltipItem.label + ': ' + tooltipItem.raw;
+		            }
+		        }
+		    }
+		}
+		}
+	    
+	});
+
+
+	var hostNameChart = new Chart(hostNameCanvasCtx, {
+	    type: 'pie',
+	    data: {
+		labels: Object.keys(processedData[2]),
+		datasets: [{
+		    label: 'Product A Sales',
+		    data: Object.values(processedData[2]),
+		    backgroundColor: colorsets[2],
+		    borderColor: colorsets[2],
+		    borderWidth: 0
+		}]
+	    },
+	    options: {
+		responsive: true,
+		plugins: {
+		    legend: {
+		        position: 'top',
+		    },
+		    tooltip: {
+		        callbacks: {
+		            label: function(tooltipItem) {
+		                return tooltipItem.label + ': ' + tooltipItem.raw;
+		            }
+		        }
+		    }
+		}
+		}
+	    
+	});
+
+	var hostIPChart = new Chart(hostIPCanvasCtx, {
+	    type: 'pie',
+	    data: {
+		labels: Object.keys(processedData[3]),
+		datasets: [{
+		    label: 'Product A Sales',
+		    data: Object.values(processedData[3]),
+		    backgroundColor: colorsets[3],
+		    borderColor: colorsets[3],
+		    borderWidth: 0
+		}]
+	    },
+	    options: {
+		responsive: true,
+		plugins: {
+		    legend: {
+		        position: 'top',
+		    },
+		    tooltip: {
+		        callbacks: {
+		            label: function(tooltipItem) {
+		                return tooltipItem.label + ': ' + tooltipItem.raw;
+		            }
+		        }
+		    }
+		}
+		}
+	    
+	});
+
+	var userAgentChart = new Chart(userAgentCanvasCtx, {
+	    type: 'pie',
+	    data: {
+		labels: Object.keys(processedData[4]),
+		datasets: [{
+		    label: 'Product A Sales',
+		    data: Object.values(processedData[4]),
+		    backgroundColor: colorsets[4],
+		    borderColor: colorsets[4],
+		    borderWidth: 0
+		}]
+	    },
+	    options: {
+		responsive: true,
+		plugins: {
+		    legend: {
+		        position: 'top',
+		    },
+		    tooltip: {
+		        callbacks: {
+		            label: function(tooltipItem) {
+		                return tooltipItem.label + ': ' + tooltipItem.raw;
+		            }
+		        }
+		    }
+		}
+		}
+	    
+	});
+
+
+}
+
+
+
+//IO functionality--------------------------------------------------------------------------------------------main-------------------------------------------------------------------------------------------------------------------
+resetButton.addEventListener(
+"click",
+  ()=>{
+  outputField.innerHTML=" ";
+  passkey.value="";
   }
-};
-
-// render init block
-const myChart = new Chart(
-  document.getElementById('mychart1'),
-  config0
 );
-//----------------------------------------------------------
 
-let bgcol2=[]
-for(let i=0;i<methkey.length;i++){
-  bgcol2.push(randRGBA());
+fetchButton.addEventListener(
+"click",
+async ()=>{
+
+let pass_key=passKey.value; // Has the pass key
+if(pass_key==""){
+outputField.innerHTML="Please Enter a Passkey";
+return;
 }
+passkey.value="";
+outputField.innerHTML=""; // clear the output field
 
-//----------------------------------------------------------
-
-
-
-function countOccurrences(arr) {
-  var countMap = new Map();
-  
-  for (var i = 0; i <arr.length; i++) {
-      let item= arr[i].request.path;
-      if (countMap.has(item)) {
-          countMap.set(item, countMap.get(item) + 1);
-      } else {
-          countMap.set(item, 1);
-      }
-  }
-  
-  return countMap;
+//URL construction
+var url = ENDPOINT+`?db=${DATABASE}&col=${COLLECTION}&passkey=${pass_key}`;
+var fetchedData= await getData(url);
+if(fetchedData.status==401){
+	outputField.innerHTML="Passkey is Incorrect"
+	return;
 }
-
-const path =Object.fromEntries(countOccurrences(fdata.data));
-const pathkey= Object.keys(path);
-const pathval=Object.values(path);
-
-//-----------------------------------------------------------
-
-const data1 = {
-  labels: pathkey,
-  datasets: [{
-    label: 'paths',
-    data: pathval,
-    backgroundColor: bgcol2,
-    borderColor: [
-      
-    ],
-    borderWidth: 1
-  }]
-};
-
-// config 
-const config1 = {
-  type: 'pie',
-  data: data1,
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-};
-
-// render init block
-const myChart1 = new Chart(
-  document.getElementById('mychart2'),
-  config1
-);
-
-//-------------------------------------------------------------
-
-function countOccurrences(arr) {
-  var countMap = new Map();
-  
-  for (var i = 0; i <arr.length; i++) {
-      let item= arr[i].host_name;
-      if (countMap.has(item)) {
-          countMap.set(item, countMap.get(item) + 1);
-      } else {
-          countMap.set(item, 1);
-      }
-  }
-  
-  return countMap;
+else if(fetchedData.status!=200){
+	outputField.innerHTML=`Error code : ${fetchedData.status}`;
+	return;
 }
-
-const hostname =Object.fromEntries(countOccurrences(fdata.data));
-const hostnkey= Object.keys(hostname);
-const hostnval=Object.values(hostname);
-
-//--------------------------------------------------------------
-
-let bgcol3=[]
-for(let i=0;i<methkey.length;i++){
-  bgcol3.push(randRGBA());
+createDOMTargets();
+populateChart(fetchedData);
 }
-
-//--------------------------------------------------------------
-
-const data2 = {
-  labels: hostnkey,
-  datasets: [{
-    label: 'host_name',
-    data: hostnval,
-    backgroundColor: bgcol3,
-    borderColor: [
-      
-    ],
-    borderWidth: 1
-  }]
-};
-
-// config 
-const config2 = {
-  type: 'pie',
-  data: data2,
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-};
-
-// render init block
-const myChart2 = new Chart(
-  document.getElementById('mychart3'),
-  config2
-);
-
-//-------------------------------------------------------------
-
-function countOccurrences(arr) {
-  var countMap = new Map();
-  
-  for (var i = 0; i <arr.length; i++) {
-      let item= arr[i].host_ip;
-      if (countMap.has(item)) {
-          countMap.set(item, countMap.get(item) + 1);
-      } else {
-          countMap.set(item, 1);
-      }
-  }
-  
-  return countMap;
-}
-
-const ip =Object.fromEntries(countOccurrences(fdata.data));
-const ipkey= Object.keys(ip);
-const ipval=Object.values(ip);
-
-//--------------------------------------------------------------
-
-let bgcol4=[]
-for(let i=0;i<methkey.length;i++){
-  bgcol4.push(randRGBA());
-}
-
-//--------------------------------------------------------------
-
-const data3 = {
-  labels: ipkey,
-  datasets: [{
-    label: 'host_ip',
-    data: ipval,
-    backgroundColor: bgcol4,
-    borderColor: [
-      
-    ],
-    borderWidth: 1
-  }]
-};
-
-// config 
-const config3 = {
-  type: 'pie',
-  data: data3,
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-};
-
-// render init block
-const myChart3 = new Chart(
-  document.getElementById('mychart4'),
-  config3
 );
